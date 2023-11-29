@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  # import packages
+  imports = [
+    ./programs/nvim
+];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "aczet";
@@ -25,10 +29,13 @@
     pkgs.jq
     pkgs.yq-go
     pkgs.fzf
+    pkgs.starship
   ];
   # Install git
   programs.git = {
     enable = true;
+    userName = "Allan Zeta";
+    userEmail = "aczeta180@gmail.com";
     lfs = {
       enable = true;
       };
@@ -37,7 +44,7 @@
   programs.bash = {
     enable = true;
     sessionVariables = {
-      EDITOR = "vim";
+      EDITOR = "nvim";
       };
     }; 
     
