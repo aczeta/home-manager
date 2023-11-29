@@ -29,8 +29,6 @@
   # Install git
   programs.git = {
     enable = true;
-    userName = "Allan Zeta";
-    userEmail = "aczeta180@gmail.com";
     lfs = {
       enable = true;
       };
