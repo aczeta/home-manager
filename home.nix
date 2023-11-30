@@ -29,7 +29,7 @@
     pkgs.jq
     pkgs.yq-go
     pkgs.fzf
-    pkgs.starship
+    
   ];
   # Install git
   programs.git = {
@@ -47,5 +47,9 @@
       EDITOR = "nvim";
       };
     }; 
-    
+  # Install and configure starship.rs
+  programs.starship = {
+    enable = true;
+    enableBashIntegration = true;
+    };
 }
