@@ -29,7 +29,8 @@
     pkgs.jq
     pkgs.yq-go
     pkgs.fzf
-    
+    pkgs.chromium
+    pkgs.deno
   ];
   # Install git
   programs.git = {
