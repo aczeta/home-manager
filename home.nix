@@ -4,7 +4,7 @@
   # import packages
   imports = [
     ./programs/nvim
-];
+  ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "aczet";
@@ -18,7 +18,7 @@
   # You can update Home Manager without changing this value. See
   # the Home Manager release notes for a list of state version
   # changes in each release.
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.05";
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
@@ -31,6 +31,7 @@
     pkgs.fzf
     pkgs.chromium
     pkgs.deno
+    pkgs.fd 
   ];
   # Install git
   programs.git = {
@@ -47,10 +48,24 @@
     sessionVariables = {
       EDITOR = "nvim";
       };
+    enableCompletion = true;
     }; 
   # Install and configure starship.rs
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
     };
+          
+  # Install and configure eza
+  programs.eza = {
+    enable = true;
+    enableAliases = true;
+    icons = true;
+    git = true;
+    extraOptions = [ "--long"];
+    };
+  # Install and configure zoxide
+  programs.zoxide = {
+    enable = true;
+  };
 }
