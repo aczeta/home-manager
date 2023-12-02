@@ -37,3 +37,6 @@ require("lazy").setup("plugins")
 
 -- setup colorscheme
 vim.cmd("colorscheme tokyonight")
+
+-- setup lsp config
+require("lspconfig")
