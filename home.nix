@@ -34,6 +34,8 @@
     pkgs.fd
     pkgs.lua-language-server
     pkgs.nixd
+    pkgs.python3
+    pkgs.sqlite
   ];
   # Install git
   programs.git = {

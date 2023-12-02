@@ -19,6 +19,7 @@ vim.cmd("set cc=80")             -- set an 80 column border for good style
 vim.cmd("set cursorline")        -- highlight current cursorline
 vim.cmd("set clipboard=unnamedplus") -- use system clipboard
 vim.cmd("set ttyfast")           -- speed up scrolling
+vim.cmd("set termguicolors")     -- TrueColor Support
 --bootstrap lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
