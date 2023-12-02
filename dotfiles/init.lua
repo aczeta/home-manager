@@ -29,7 +29,7 @@ if not vim.loop.fs_stat(lazypath) then
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
     "--branch=stable", -- latest stable release
-    lazypath, 
+    lazypath,
   })
 end
 vim.opt.rtp:prepend(lazypath)
@@ -42,10 +42,13 @@ vim.cmd("colorscheme tokyonight")
 -- taken from suggested configuration from nvim-lspconfig
 -- Setup language servers.
 local lspconfig = require('lspconfig')
+-- require coq completion engine
+local coq = require('coq')
 lspconfig.lua_ls.setup {}
-lspconfig.nixd.setup {}
+lspconfig.nixd.setup {} 
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
+  
   settings = {
     ['rust-analyzer'] = {},
   },
@@ -89,4 +92,4 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end, opts)
   end,
 })
-
+vim.cmd("COQnow")

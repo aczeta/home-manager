@@ -17,4 +17,8 @@
     home.file."./.config/nvim/lua/plugins/peek.lua".source = ./peek.lua;
     home.file."./.config/nvim/lua/plugins/lsp.lua".source = ./lsp.lua;
     home.file."./.config/nvim/lua/plugins/coq.lua".source = ./coq.lua;
+    home.file."./.config/nvim/lua/plugins/treesitter.lua" = {
+        source = ./treesitter.lua;
+        };
+
 }
