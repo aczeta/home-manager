@@ -31,7 +31,9 @@
     pkgs.fzf
     pkgs.chromium
     pkgs.deno
-    pkgs.fd 
+    pkgs.fd
+    pkgs.lua-language-server
+    pkgs.nixd
   ];
   # Install git
   programs.git = {
