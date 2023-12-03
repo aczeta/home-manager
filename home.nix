@@ -36,6 +36,9 @@
     pkgs.nixd
     pkgs.python3
     pkgs.sqlite
+    pkgs.tree-sitter
+    pkgs.libstdcxx5
+    pkgs.gcc
   ];
   # Install git
   programs.git = {

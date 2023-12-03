@@ -11,14 +11,9 @@
     };
     # Setup neovim config
     home.file."./.config/nvim/init.lua".source = ./init.lua;
-    home.file."./.config/nvim/plugins.lua".source = ./plugins.lua; 
-    home.file."./.config/nvim/lua/plugins/wk.lua".source = ./wk.lua;
-    home.file."./.config/nvim/lua/plugins/tokyo.lua".source = ./tokyo.lua;
-    home.file."./.config/nvim/lua/plugins/peek.lua".source = ./peek.lua;
-    home.file."./.config/nvim/lua/plugins/lsp.lua".source = ./lsp.lua;
-    home.file."./.config/nvim/lua/plugins/coq.lua".source = ./coq.lua;
-    home.file."./.config/nvim/lua/plugins/treesitter.lua" = {
-        source = ./treesitter.lua;
-        };
-
+    home.file."./.config/nvim/lua/plugins/plugins.lua".source = ./plugins.lua;
+    home.file."./.config/nvim/lua/colorscheme.lua".source = ./colorscheme.lua;
+    home.file."./.config/nvim/lua/opts.lua".source = ./opts.lua; 
+    home.file."./.config/nvim/lua/keys.lua".source = ./keys.lua;
+    home.file."./.config/nvim/lua/lspconfig.lua".source = ./lspconfig.lua; 
 }
