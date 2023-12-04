@@ -14,6 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 require("keys")
 require("opts")
 require("lazy").setup("plugins")
-
-
 require("colorscheme")
+
+vim.cmd(":COQnow")
