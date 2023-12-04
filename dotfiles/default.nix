@@ -15,5 +15,4 @@
     home.file."./.config/nvim/lua/colorscheme.lua".source = ./colorscheme.lua;
     home.file."./.config/nvim/lua/opts.lua".source = ./opts.lua; 
     home.file."./.config/nvim/lua/keys.lua".source = ./keys.lua;
-    home.file."./.config/nvim/lua/lspconfig.lua".source = ./lspconfig.lua; 
-}
+    home.file."./.config/nvim/lua/lsp.lua".source = ./lsp.lua; }

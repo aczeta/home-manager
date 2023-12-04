@@ -15,5 +15,5 @@ require("keys")
 require("opts")
 require("lazy").setup("plugins")
 require("colorscheme")
-
+require('lsp')
 vim.cmd(":COQnow")
