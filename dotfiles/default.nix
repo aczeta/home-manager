@@ -15,4 +15,9 @@
     home.file."./.config/nvim/lua/colorscheme.lua".source = ./colorscheme.lua;
     home.file."./.config/nvim/lua/opts.lua".source = ./opts.lua; 
     home.file."./.config/nvim/lua/keys.lua".source = ./keys.lua;
-    home.file."./.config/nvim/lua/lsp.lua".source = ./lsp.lua; }
+    home.file."./.config/nvim/lua/lsp.lua".source = ./lsp.lua;
+    home.file."./.config/nvim/lua/comp.lua".source = ./comp.lua;
+    home.file."./.config/nvim/coq-user-snippets/markdown.snip" = {
+                                                source = ./markdown.snip;
+    };
+}

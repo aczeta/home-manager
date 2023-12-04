@@ -16,4 +16,9 @@ require("opts")
 require("lazy").setup("plugins")
 require("colorscheme")
 require('lsp')
+require("peek").setup({
+                  app = 'chromium'
+              })
+require('comp')
 vim.cmd(":COQnow")
+vim.cmd(":COQsnips compile")
